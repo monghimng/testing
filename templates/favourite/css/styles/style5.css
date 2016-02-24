@@ -1,0 +1,822 @@
+/*
+//////////////////////////////////////////////////////////////////////
+
+/// style 5
+
+//////////////////////////////////////////////////////////////////////
+*/
+
+/*
+//////////////////////////////////////////////////////////////////////
+
+  1.1. reset
+  1.2. module positions
+  1.3. titles
+  1.4. buttons
+  1.5. navigation
+  1.6. variations
+  1.7. icons
+  1.8. images
+  1.9. bootstrap elements
+  1.10. lists
+  1.11. joomla
+  1.12. k2
+  1.13. extensions
+  1.14. custom content
+
+//////////////////////////////////////////////////////////////////////
+*/
+
+    /*
+    //////////////////////////////////////////////////
+
+1.1. reset
+
+    //////////////////////////////////////////////////
+    */
+
+a { color: #86B827; }
+a:hover, a:focus { color: #444; outline: none; }
+
+
+    /*
+    //////////////////////////////////////////////////
+
+1.2. module positions
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  topbar
+*/
+
+#fav-topbar ul.nav li a:before {
+  color: #86B827;
+}
+
+/*
+///  back to top
+*/
+
+a.backtop i {
+  background-color: #86B827;
+  color: #FFFFFF;
+}
+
+/*
+///  color module positions
+*/
+
+#fav-advertwrap,
+#fav-focuswrap {
+  background-color: #86B827;
+  color: #fff;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.3. titles
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  joomla titles
+*/
+
+.page-header h2 a,
+h2.item-title a,
+div.categories-list h3 a {
+  color: #444;
+}
+.page-header h2 a:hover,
+h2.item-title a:hover,
+div.categories-list h3 a:hover {
+  color: #86B827;
+}
+
+/*
+///  k2 titles
+*/
+
+div.itemHeader h2.itemTitle a:hover,
+div.catItemHeader h3.catItemTitle a:hover,
+div.tagItemHeader h2.tagItemTitle a:hover,
+div.latestItemHeader h2.latestItemTitle a:hover,
+div.genericItemHeader h2.genericItemTitle a:hover,
+div.userItemHeader h3.userItemTitle a:hover {
+  color: #86B827;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.4. buttons
+
+    //////////////////////////////////////////////////
+    */
+
+.btn,
+.pager .next a,
+.pager .previous a,
+a.k2ReadMore,
+.k2AccountPage button.button.validate,
+div.itemNavigation a.itemNext,
+div.itemNavigation a.itemPrevious,
+div.itemCommentsForm form input#submitCommentButton,
+div.k2LoginBlock fieldset.input input.button,
+div.k2UserBlock form input.button.ubLogout {
+  color: #fff;
+  background-color: #86B827;
+}
+.btn:hover,
+.btn:focus,
+.pager .next a:hover,
+.pager .previous a:hover,
+.pager .next a:focus,
+.pager .previous a:focus,
+a.k2ReadMore:hover,
+a.k2ReadMore:focus,
+div.itemNavigation a.itemNext:hover,
+div.itemNavigation a.itemNext:focus,
+div.itemNavigation a.itemPrevious:hover,
+div.itemNavigation a.itemPrevious:focus,
+div.itemCommentsForm form input#submitCommentButton:hover,
+div.itemCommentsForm form input#submitCommentButton:focus,
+div.k2LoginBlock fieldset.input input.button:hover,
+div.k2LoginBlock fieldset.input input.button:focus,
+div.k2UserBlock form input.button.ubLogout:hover,
+div.k2UserBlock form input.button.ubLogout:focus,
+.k2AccountPage button.button.validate:hover,
+.k2AccountPage button.button.validate:focus {
+  color: #fff;
+  background-color: #333;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #86B827;
+  border: 1px solid transparent;
+  background-image: none;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #86B827;
+}
+
+/*
+///  pagination
+*/
+
+.pagination ul li a,
+.pagination ul > .disabled > a,
+.pagination ul > .active > a,
+.pagination ul > .disabled > a:hover,
+.pagination ul > .disabled > a:focus,
+.pagination ul > .active > a:hover,
+.pagination ul > .active > a:focus,
+.k2Pagination ul li a,
+.k2Pagination ul > .disabled > a,
+.k2Pagination ul > .active > a,
+.itemCommentsPagination ul li a,
+.itemCommentsPagination ul > .disabled > a,
+.itemCommentsPagination ul > .active > a,
+.k2Pagination ul > .disabled > a:hover,
+.k2Pagination ul > .disabled > a:focus,
+.k2Pagination ul > .active > a:hover,
+.k2Pagination ul > .active > a:focus,
+.itemCommentsPagination ul > .disabled > a:hover,
+.itemCommentsPagination ul > .disabled > a:focus,
+.itemCommentsPagination ul > .active > a:hover,
+.itemCommentsPagination ul > .active > a:focus{
+  color: #fff;
+  background-color: #86B827;
+}
+.pagination ul li a:hover,
+.pagination ul li.active a,
+.pagination ul li.active a:hover {
+  color: #86B827;
+  background-color: #fff;
+}
+.k2Pagination ul li a:hover,
+.k2Pagination ul li.active a,
+.k2Pagination ul li.active a:hover,
+.itemCommentsPagination ul li a:hover,
+.itemCommentsPagination ul li.active a,
+.itemCommentsPagination ul li.active a:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+/*
+///  article dropdown
+*/
+
+ul.dropdown-menu a:hover {
+  color: #86B827;
+}
+.btn-group.open .btn.dropdown-toggle {
+  background-color: #86B827;
+}
+
+/*
+///  tags
+*/
+
+div.tag-category ul.thumbnails h3 a,
+.label-info[href],
+.badge-info[href] {
+  color: #86B827;
+}
+
+/*
+///  badge
+*/
+
+.badge-info {
+  background-color: #86B827;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.5. navigation
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  navigation style
+*/
+
+ul.nav.menu li span.nav-header {
+  color: #86B827;
+}
+.favnav .navigation .nav-pills > .active > a,
+.favnav .navigation .nav-pills > li > a:hover,
+.favnav .navigation .nav-pills > li > a:focus,
+.favnav .navigation .menunav-pills > .active > a,
+.favnav .navigation .menunav-pills > li > a:hover,
+.favnav .navigation .menunav-pills > li > a:focus,
+.favnav .navigation li.active span.nav-header,
+.favnav .navigation li span.nav-header:hover,
+.favnav .navigation li span.nav-header:focus {
+  background-color: #86B827;
+  color: #fff !important;
+}
+.favnav .navigation .nav-pills .nav-child > .active > a,
+.favnav .navigation .nav-pills .nav-child > li > a:hover,
+.favnav .navigation .nav-pills .nav-child > li > a:focus,
+.favnav .navigation .menunav-pills .nav-child > .active > a,
+.favnav .navigation .menunav-pills .nav-child > li > a:hover,
+.favnav .navigation .menunav-pills .nav-child > li > a:focus,
+.favnav .navigation .nav-pills .nav-child > li.active > span.nav-header,
+.favnav .navigation .nav-pills .nav-child > li > span.nav-header:hover,
+.favnav .navigation .nav-pills .nav-child > li > span.nav-header:focus,
+.favnav .navigation .menunav-pills .nav-child > li.active > span.nav-header,
+.favnav .navigation .menunav-pills .nav-child > li > span.nav-header:hover,
+.favnav .navigation .menunav-pills .nav-child > li > span.nav-header:focus {
+  background-color: #fff;
+  color: #86B827 !important;
+}
+.favnav .navigation .nav-pills .nav-child > li > span.nav-header {
+  background-color: #fff;
+  color: inherit !important;
+}
+.favnav .navigation li a[class^="fa-"]:before,
+.favnav .navigation li a[class*=" fa-"]:before,
+.favnav .navigation li span.nav-header[class^="fa-"]:before,
+.favnav .navigation li span.nav-header[class*=" fa-"]:before {
+  color: #86B827;
+}
+.favnav .navigation li a[class^="fa-"]:hover:before,
+.favnav .navigation li a[class*=" fa-"]:hover:before,
+.favnav .navigation li a[class^="fa-"]:focus:before,
+.favnav .navigation li a[class*=" fa-"]:focus:before,
+.favnav .navigation li.active a[class^="fa-"]:before,
+.favnav .navigation li.active a[class*=" fa-"]:before,
+.favnav .navigation li span.nav-header[class^="fa-"]:hover:before,
+.favnav .navigation li span.nav-header[class*=" fa-"]:hover:before,
+.favnav .navigation li span.nav-header[class^="fa-"]:focus:before,
+.favnav .navigation li span.nav-header[class*=" fa-"]:focus:before,
+.favnav .navigation li.active span.nav-header[class^="fa-"]:before,
+.favnav .navigation li.active span.nav-header[class*=" fa-"]:before  {
+  color: #fff !important;
+}
+.favnav .navigation ul.nav-child li a[class^="fa-"]:before,
+.favnav .navigation ul.nav-child li a[class*=" fa-"]:before,
+.favnav .navigation ul.nav-child li span.nav-header[class^="fa-"]:before,
+.favnav .navigation ul.nav-child li span.nav-header[class*=" fa-"]:before,
+.favnav .navigation ul.nav-child li a[class^="fa-"]:before,
+.favnav .navigation ul.nav-child li a[class*=" fa-"]:before,
+.favnav .navigation ul.nav-child li span.nav-header[class^="fa-"]:before,
+.favnav .navigation ul.nav-child li span.nav-header[class*=" fa-"]:before,
+.favnav .navigation ul.nav-child li a[class^="fa-"]:hover:before,
+.favnav .navigation ul.nav-child li a[class*=" fa-"]:hover:before,
+.favnav .navigation ul.nav-child li a[class^="fa-"]:focus:before,
+.favnav .navigation ul.nav-child li a[class*=" fa-"]:focus:before,
+.favnav .navigation ul.nav-child li.active a[class^="fa-"]:before,
+.favnav .navigation ul.nav-child li.active a[class*=" fa-"]:before,
+.favnav .navigation ul.nav-child li span.nav-header[class^="fa-"]:hover:before,
+.favnav .navigation ul.nav-child li span.nav-header[class*=" fa-"]:hover:before,
+.favnav .navigation ul.nav-child li span.nav-header[class^="fa-"]:focus:before,
+.favnav .navigation ul.nav-child li span.nav-header[class*=" fa-"]:focus:before,
+.favnav .navigation ul.nav-child li.active span.nav-header[class^="fa-"]:before,
+.favnav .navigation ul.nav-child li.active span.nav-header[class*=" fa-"]:before  {
+  color: #86B827 !important;
+}
+
+/*
+///  vertical menus
+*/
+
+ul.nav.menu li span.nav-header {
+  color: #86B827;
+}
+ul.menubasic li a:hover,
+ul.menubasic li a:focus,
+ul.menubasic li.current a,
+ul.menubasic li.current ul a:hover,
+ul.menubasic li.current ul a:focus,
+ul.menubasic li span.nav-header:hover,
+ul.menubasic li span.nav-header:focus {
+  color: #fff;
+  background-color: #86B827;
+}
+ul.menuarrow li a:hover,
+ul.menuarrow li a:focus,
+ul.menuarrow li.current a,
+ul.menuarrow li.current ul a:hover,
+ul.menuarrow li.current ul a:focus,
+ul.menuarrow li span.nav-header:hover,
+ul.menuarrow li span.nav-header:focus {
+  color: #86B827;
+  background-color: transparent;
+}
+ul.menuarrow li a:hover:before,
+ul.menuarrow li a:focus:before,
+ul.menuarrow li.current a:before,
+ul.menuarrow li.current ul a:hover:before,
+ul.menuarrow li.current ul a:focus:before,
+ul.menuarrow li span.nav-header:hover:before,
+ul.menuarrow li span.nav-header:focus:before {
+  color: #86B827;
+}
+ul.menuside li a:hover,
+ul.menuside li a:focus,
+ul.menuside li.current a,
+ul.menuside li.current ul a:hover,
+ul.menuside li.current ul a:focus,
+ul.menuside li span.nav-header:hover,
+ul.menuside li span.nav-header:focus {
+  color: #86B827;
+  border-left: 5px solid #86B827;
+  background-color: transparent;
+}
+ul.menuline li a:hover,
+ul.menuline li a:focus,
+ul.menuline li.current a,
+ul.menuline li.current ul a:hover,
+ul.menuline li.current ul a:focus,
+ul.menuline li span.nav-header:hover,
+ul.menuline li span.nav-header:focus {
+  color: #444;
+  border-bottom: 1px solid #86B827;
+  background-color: transparent;
+}
+ul.menuline li a:hover:before,
+ul.menuline li a:focus:before,
+ul.menuline li.current a:before,
+ul.menuline li.current ul a:hover:before,
+ul.menuline li.current ul a:focus:before,
+ul.menuline li span.nav-header:hover:before,
+ul.menuline li span.nav-header:focus:before {
+  color: #86B827;
+}
+ul.menuline.menu-clear li a:hover,
+ul.menuline.menu-clear li a:focus,
+ul.menuline.menu-clear li span.nav-header:hover,
+ul.menuline.menu-clear li span.nav-header:focus {
+  color: #fff;
+  border-bottom: 1px solid #86B827;
+}
+ul.menuline.menu-dark li a:hover,
+ul.menuline.menu-dark li a:focus,
+ul.menuline.menu-dark li span.nav-header:hover,
+ul.menuline.menu-dark li span.nav-header:focus {
+  color: #fff!important;
+  border-bottom: 1px solid #86B827;
+}
+
+/*
+///  horizontal menus
+*/
+
+ul.menuhorizontal li.active a,
+ul.menuhorizontal li a:hover,
+ul.menuhorizontal li a:focus,
+ul.menuhorizontal li:hover a,
+ul.menuhorizontal li:focus a,
+ul.menuhorizontal li.active span.nav-header,
+ul.menuhorizontal li span.nav-header:hover,
+ul.menuhorizontal li span.nav-header:focus,
+ul.menuhorizontal li:hover span.nav-header,
+ul.menuhorizontal li:focus span.nav-header,
+ul.menuhorizontal li span.nav-header:hover,
+ul.menuhorizontal li span.nav-header:focus {
+  color: #86B827;
+  background-color: transparent;
+}
+ul.menuhorizontal.menu-clear li a,
+ul.menuhorizontal.menu-clear li span.nav-header {
+  color: #fff!important;
+}
+ul.menuhorizontal.menu-clear li.active a,
+ul.menuhorizontal.menu-clear li a:hover,
+ul.menuhorizontal.menu-clear li a:focus,
+ul.menuhorizontal.menu-clear li:hover a,
+ul.menuhorizontal.menu-clear li:focus a,
+ul.menuhorizontal.menu-clear li.active span.nav-header,
+ul.menuhorizontal.menu-clear li span.nav-header:hover,
+ul.menuhorizontal.menu-clear li span.nav-header:focus,
+ul.menuhorizontal.menu-clear li:hover span.nav-header,
+ul.menuhorizontal.menu-clear li:focus span.nav-header,
+ul.menuhorizontal.menu-clear li span.nav-header:hover,
+ul.menuhorizontal.menu-clear li span.nav-header:focus {
+  color: #86B827 !important;
+}
+ul.menuhorizontal.menu-clear li a:before,
+ul.menuhorizontal.menu-clear li span.nav-header:before {
+  color: #fff;
+}
+ul.menuhorizontal.menu-clear li.active a:before,
+ul.menuhorizontal.menu-clear li a:hover:before,
+ul.menuhorizontal.menu-clear li a:focus:before,
+ul.menuhorizontal.menu-clear li:hover a:before,
+ul.menuhorizontal.menu-clear li:focus a:before,
+ul.menuhorizontal.menu-clear li.active span.nav-header:before,
+ul.menuhorizontal.menu-clear li span.nav-header:hover:before,
+ul.menuhorizontal.menu-clear li span.nav-header:focus:before,
+ul.menuhorizontal.menu-clear li:hover span.nav-header:before,
+ul.menuhorizontal.menu-clear li:focus span.nav-header:before,
+ul.menuhorizontal.menu-clear li span.nav-header:hover:before,
+ul.menuhorizontal.menu-clear li span.nav-header:focus:before {
+  color: #86B827 !important;
+}
+ul.menuhorizontal.menu-dark li a,
+ul.menuhorizontal.menu-dark li span.nav-header {
+  color: #eee !important;
+}
+ul.menuhorizontal.menu-dark li.active a,
+ul.menuhorizontal.menu-dark li a:hover,
+ul.menuhorizontal.menu-dark li a:focus,
+ul.menuhorizontal.menu-dark li:hover a,
+ul.menuhorizontal.menu-dark li:focus a,
+ul.menuhorizontal.menu-dark li.active span.nav-header,
+ul.menuhorizontal.menu-dark li span.nav-header:hover,
+ul.menuhorizontal.menu-dark li span.nav-header:focus,
+ul.menuhorizontal.menu-dark li:hover span.nav-header,
+ul.menuhorizontal.menu-dark li:focus span.nav-header,
+ul.menuhorizontal.menu-dark li span.nav-header:hover,
+ul.menuhorizontal.menu-dark li span.nav-header:focus {
+  color: #86B827 !important;
+}
+ul.menuhorizontal.menu-dark li a:before,
+ul.menuhorizontal.menu-dark li span.nav-header:before {
+  color: #eee;
+}
+ul.menuhorizontal.menu-dark li.active a:before,
+ul.menuhorizontal.menu-dark li a:hover:before,
+ul.menuhorizontal.menu-dark li a:focus:before,
+ul.menuhorizontal.menu-dark li:hover a:before,
+ul.menuhorizontal.menu-dark li:focus a:before,
+ul.menuhorizontal.menu-dark li.active span.nav-header:before,
+ul.menuhorizontal.menu-dark li span.nav-header:hover:before,
+ul.menuhorizontal.menu-dark li span.nav-header:focus:before,
+ul.menuhorizontal.menu-dark li:hover span.nav-header:before,
+ul.menuhorizontal.menu-dark li:focus span.nav-header:before,
+ul.menuhorizontal.menu-dark li span.nav-header:hover:before,
+ul.menuhorizontal.menu-dark li span.nav-header:focus:before {
+  color: #86B827!important;
+}
+ul.menuhorizontal.pull-right li.active a,
+ul.menuhorizontal.pull-right li a:hover,
+ul.menuhorizontal.pull-right li a:focus,
+ul.menuhorizontal.pull-right li:hover a,
+ul.menuhorizontal.pull-right li:focus a,
+ul.menuhorizontal.pull-right li.active span.nav-header,
+ul.menuhorizontal.pull-right li span.nav-header:hover,
+ul.menuhorizontal.pull-right li span.nav-header:focus,
+ul.menuhorizontal.pull-right li:hover span.nav-header,
+ul.menuhorizontal.pull-right li:focus span.nav-header,
+ul.menuhorizontal.pull-right li span.nav-header:hover,
+ul.menuhorizontal.pull-right li span.nav-header:focus {
+  color: #86B827;
+  background-color: transparent;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.6. variations
+
+    //////////////////////////////////////////////////
+    */
+
+.moduletable-sfx1 h3 i,
+.moduletable-sfx2 h3 i,
+.moduletable-sfx5 h3 i,
+.moduletable-sfx6 h3 i,
+.moduletable-sfx13 h3 i,
+.moduletable-sfx14 h3 i,
+.moduletable-sfx17 h3 i,
+.moduletable-sfx18 h3 i,
+.moduletable-sfx21 h3 i,
+.moduletable-sfx22 h3 i,
+.moduletable-sfx25 h3 i,
+.moduletable-sfx26 h3 i,
+.moduletable-sfx29 h3 i,
+.moduletable-sfx30 h3 i,
+.moduletable-sfx33 h3 i,
+.moduletable-sfx34 h3 i,
+.moduletable-sfx21 a:hover,
+.moduletable-sfx21 a:focus {
+  color: #86B827;
+}
+.moduletable-sfx3 h3 i,
+.moduletable-sfx4 h3 i,
+.moduletable-sfx7 h3 i,
+.moduletable-sfx8 h3 i,
+.moduletable-sfx15 h3 i,
+.moduletable-sfx16 h3 i,
+.moduletable-sfx19 h3 i,
+.moduletable-sfx20 h3 i,
+.moduletable-sfx23 h3 i,
+.moduletable-sfx24 h3 i,
+.moduletable-sfx27 h3 i,
+.moduletable-sfx28 h3 i,
+.moduletable-sfx31 h3 i,
+.moduletable-sfx32 h3 i,
+.moduletable-sfx35 h3 i,
+.moduletable-sfx36 h3 i,
+.moduletable-sfx9,
+.moduletable-sfx10,
+.moduletable-sfx11,
+.moduletable-sfx12 {
+  background-color: #86B827;
+  color: #FFF;
+}
+.moduletable-sfx4 h3,
+.moduletable-sfx8 h3,
+.moduletable-sfx16 h3,
+.moduletable-sfx16 h3,
+.moduletable-sfx20 h3,
+.moduletable-sfx24 h3,
+.moduletable-sfx28 h3,
+.moduletable-sfx32 h3,
+.moduletable-sfx36 h3
+ {
+  border-bottom: 1px solid #86B827;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.7. icons
+
+    //////////////////////////////////////////////////
+    */
+
+/* icon font */
+i[class^="fa fa-"],
+i[class*=" fa fa-"] {
+  font-size: 18px;
+  padding-right: 0.6em;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.8. images
+
+    //////////////////////////////////////////////////
+    */
+
+/* image polaroid */
+.img-polaroid,
+.item-image img,
+span.itemImage img,
+span.catItemImage img,
+span.tagItemImage img,
+span.userItemImage img,
+span.latestItemImage img,
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.9. bootstrap elements
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  blockquote
+*/
+
+blockquote {
+  border-color: #86B827;
+}
+blockquote.blockquote-dark {
+  border-color: #86B827;
+}
+
+/*
+///  pre, code
+*/
+
+pre, code {
+  border: 1px solid #E2E2E2;
+  background-color: #F2F2F2;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.10. lists
+
+    //////////////////////////////////////////////////
+    */
+
+ul.list-square li:before {
+  background-color: #86B827;
+  color: #fff;
+}
+ol.list-square li:before {
+  color: #fff;
+  background: none repeat scroll 0% 0% #86B827;
+}
+ul.list-circle li:before {
+  background-color: #86B827;
+  color: #fff;
+}
+ol.list-circle li:before {
+  color: #fff;
+  background: none repeat scroll 0% 0% #86B827;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.11. joomla
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  core-supported extensions in future Joomla! versions
+*/
+
+div.newsfeed h2 a:hover,
+div.newsfeed-category h2 a:hover {
+  color: #86B827;
+}
+#fav-search-advanced-fields .accordion-heading a.accordion-toggle {
+  color: #fff;
+  background-color: #86B827;
+}
+
+/*
+///  language
+*/
+
+#fav-language ul.dropdown-menu li a:hover,
+#fav-language ul.dropdown-menu li a:focus {
+  color: #86B827;
+}
+#fav-language-demo ul.dropdown-menu li a:hover,
+#fav-language-demo ul.dropdown-menu li a:focus {
+  color: #86B827;
+}
+
+/* /// mobile */
+
+@media (max-width: 768px) {
+
+  .moduletablefavstyle.pull-left .fav-search a.btn.dropdown-toggle i {
+    color: #86B827;
+  }
+
+}
+
+/*
+///  search
+*/
+
+.moduletablefavstyle .fav-search .nav > li > a:hover {
+  background-color: #333;
+}
+.moduletablefavstyle .fav-search .nav > li > a:focus {
+  background-color: #86B827;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.12. k2
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  k2 featured
+*/
+
+div.itemIsFeatured h2:before,
+div.catItemIsFeatured h3:before,
+div.userItemIsFeatured h3:before {
+  color: #86B827;
+}
+div.itemIsFeatured div.itemHeader h2.itemTitle span sup,
+div.catItemIsFeatured div.catItemHeader h3.catItemTitle span sup {
+  background-color: #86B827;
+}
+
+/*
+///  edit button
+*/
+
+#k2Container span.catItemAddLink a.modal {
+  background-color: #86B827;
+  color: #fff;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.13. extensions
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  favpromote
+*/
+
+.favstyle div[id^="favpromote-box"] h4[id^="favpromote-title"],
+.favstyle div[id^="favpromote-box"] h4[id*=" favpromote-title"] {
+  border-bottom: none;
+  background-color: #86B827 !important;
+}
+
+/*
+///  favglyph
+*/
+
+.favstyle div[id^="favglyph-icon"],
+.favstyle div[id*=" favglyph-icon"] {
+  background-color: #86B827 !important;
+  border: 1px solid #86B827 !important;
+}
+
+/*
+///  faveffects
+*/
+
+.favstyle div[id^="faveffects-icon"] i,
+.favstyle div[id*=" faveffects-icon"] i {
+  color: #86B827 !important;
+}
+
+/*
+///  favsocial
+*/
+
+.favstyle div[id^="favsocial"] a,
+.favstyle div[id*=" favsocial"] a {
+  background-color: #86B827 !important;
+}
+
+    /*
+    //////////////////////////////////////////////////
+
+1.14. custom content
+
+    //////////////////////////////////////////////////
+    */
+
+/*
+///  download theme
+*/
+
+#fav-download #fav-download-btn a.btn:hover,
+#fav-download #fav-download-btn a.btn:focus {
+  background-color: #86B827;
+  color: #FFF;
+}
