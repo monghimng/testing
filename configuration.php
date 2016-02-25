@@ -44,7 +44,7 @@ class JConfig {
 	public $cache_handler = 'file';
 	public $cachetime = '15';
 	public $MetaDesc = 'Coronado Men\'s Connection.';
-	public $MetaKeys = '';
+	public $MetaKeys = 'Coronado Men\'s Connection';
 	public $MetaTitle = '1';
 	public $MetaAuthor = '1';
 	public $MetaVersion = '0';
