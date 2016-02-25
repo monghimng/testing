@@ -1007,3 +1007,5 @@
 2016-02-17T06:58:31+00:00	INFO 113.174.136.81	joomlafailure	Username and password do not match or you do not have an account yet.
 2016-02-17T06:58:31+00:00	INFO 113.174.136.81	joomlafailure	Username and password do not match or you do not have an account yet.
 2016-02-17T06:58:31+00:00	INFO 113.174.136.81	joomlafailure	Username and password do not match or you do not have an account yet.
+2016-02-24T06:43:46+00:00	INFO 108.90.50.119	joomlafailure	Empty password not allowed.
+2016-02-24T06:43:53+00:00	INFO 108.90.50.119	joomlafailure	Username and password do not match or you do not have an account yet.
