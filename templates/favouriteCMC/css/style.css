@@ -103,12 +103,12 @@
 */
 
 #fav-containerwrap {
-  /*background: transparent url("../images/wood_pattern.png") repeat scroll 0% 0%;*/
+  background: transparent url("../images/blue.png") repeat scroll 0% 0%;
 }
 #fav-container {
   background-color: #FFF;
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.27);
 }
 

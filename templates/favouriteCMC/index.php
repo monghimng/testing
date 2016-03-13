@@ -66,6 +66,8 @@ $favcolumns = 6;
   <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/styles/<?php echo $this->params->get('template_styles'); ?>.css" type="text/css" />
   <!-- custom -->
   <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template;?>/css/custom.css" type="text/css" />
+  <!-- custom file specifically for cmc-->
+  <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template;?>/css/cmc.css" type="text/css" />
 
   <!-- PARAMETERS -->
 	<?php require("admin/params.php"); ?>
@@ -95,10 +97,10 @@ $favcolumns = 6;
 
   <!-- BACKTOP -->
 	<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/backtop/backtop.js"></script>
-
 </head>
 
 <body<?php echo (isset($pageclass) ? ' class="favbody'.htmlspecialchars($pageclass).'"' : ''); ?>>
+<!--style='background: url("/images/CMC/pattern/bgHeader.png")'-->
 <div id='cmcHeader'  >
   <div id='cmcLogo'>
 	<a class="media-logo" href="<?php echo $this->baseurl; ?>/">
@@ -120,10 +122,83 @@ $favcolumns = 6;
 </div>
 
 
-  <div id="fav-containerwrap" class="clearfix">
+
+
+
+
+  		<div id="fav-container">
+		  <!--cmc customc slider-->
+<?php if ($this->countModules( 'cmcSlider' )) : ?>
+  <div id='cmcSliderWrapWrap'>
+	<div id='cmcSliderWrap'>
+	  <div id='cmcSlider'>
+		<jdoc:include type="modules" name="cmcSlider" />
+	  </div>
+	  <div id='cmcSliderSide'>
+		<jdoc:include type="modules" name="cmcSliderSide" />
+	  </div>
+	</div>
+  </div>
+<?php endif; ?>		
+			
+  			<!-- ADVERT -->
+			
+  			<?php if ($this->countModules('advert')) { ?>
+
+  				<div class="container-fluid alert" id="fav-advertwrap">
+
+            <?php if (($show_advert_button) !=0) : ?>
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <?php endif; ?>
+
+  					<div class="row-fluid">
+  						<div id="fav-advert" class="span11">
+
+                <jdoc:include type="modules" name="advert" style="fav" />
+
+              </div>
+  					</div>
+    			</div>
+
+  			<?php } ?>
+
+        <!-- TOPBAR -->
+        <?php
+            $topbaractive = 0;
+          for ($i=1; $i<=$favcolumns ; $i++) { if ($this->countModules('topbar'.$i)) { $topbaractive++; } }
+        ?>
+
+        <?php if ($topbaractive > 0) : ?>
+          <?php $favclass = 'span'.(str_replace(".","-",12/$topbaractive)); ?>
+
+          <div class="container-fluid" id="fav-topbarwrap">
+            <div class="<?php echo $topbar_bg_image_overlay; ?>">
+              <div class="row-fluid">
+                <div id="fav-topbar" class="clearfix">
+
+                  <?php for ($j=1;$j<=$favcolumns;$j++) { ?>
+                    <?php if ($this->countModules('topbar'.$j)): ?>
+
+                        <div id="fav-topbar<?php echo $j; ?>" class="<?php echo $favclass; ?>">
+
+                          <jdoc:include type="modules" name="topbar<?php echo $j; ?>" style="fav" />
+
+                        </div>
+
+                    <?php endif; ?>
+                  <?php } ?>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <?php endif; ?>
+<!i deleted header here-->
+
         <!-- SLIDE -->
         <?php if ($this->countModules('slide')) { ?>
-          <div class="container-fluid" id="fav-slidewrap">
+          <div class="container-fluid noPadding" id="fav-slidewrap">
             <div class="<?php echo $slide_bg_image_overlay; ?>">
               <div class="row-fluid">
                 <div id="fav-slide" class="span12">
@@ -441,6 +516,9 @@ $favcolumns = 6;
           </div>
 
         <?php endif; ?>
+
+
+		
 
   			<!-- TOP -->
         <?php
