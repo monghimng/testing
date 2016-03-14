@@ -99,28 +99,188 @@ $favcolumns = 6;
 </head>
 
 <body<?php echo (isset($pageclass) ? ' class="favbody'.htmlspecialchars($pageclass).'"' : ''); ?>>
-<div id='cmcHeader'  >
-  <div id='cmcLogo'>
-	<a class="media-logo" href="<?php echo $this->baseurl; ?>/">
-	  <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($media_logo);?>" style="border:0;" alt="<?php echo htmlspecialchars($media_logo_img_alt);?>" />
-	</a>
-  </div>
-  <div id='cmcHeaderRight'>
-	<div id='cmcSlogan'>
-	  Becoming men who matter by allowing the Word of God to define us
-	</div>
-	<div id='cmcNav'>
-	  <?php if ($this->countModules('cmcNav')) { ?>
-		  <div>
-			  <jdoc:include type="modules" name="cmcNav"/>
-		  </div>
-	  <?php } ?>
-	</div>
-  </div>
-</div>
-
 
   <div id="fav-containerwrap" class="clearfix">
+    <div class="<?php echo $body_bg_image_overlay; ?>">
+
+  	  <!-- NAVBAR -->
+  	  <div id="fav-navbarwrap" class="container-fluid">
+  			<div class="row-fluid">
+  				<div id="fav-navbar" class="clearfix">
+  					<div class="<?php echo htmlspecialchars($mobile_nav_color);?>">
+  						<div class="navbar-inner">
+
+                <div id="fav-logomobile" class="clearfix">
+                  <?php if (($show_default_logo) !=0) : ?>
+                    <h1>
+                      <a class="default-logo" href="<?php echo $this->baseurl; ?>/">
+                        <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo/<?php echo htmlspecialchars($default_logo);?>" style="border:0;" alt="<?php echo htmlspecialchars($default_logo_img_alt);?>" />
+                      </a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_media_logo) !=0) : ?>
+                    <h1>
+                      <a class="media-logo" href="<?php echo $this->baseurl; ?>/">
+                        <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($media_logo);?>" style="border:0;" alt="<?php echo htmlspecialchars($media_logo_img_alt);?>" />
+                      </a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_text_logo) !=0) : ?>
+                    <h1>
+                      <a class="text-logo" href="<?php echo $this->baseurl; ?>/"><?php echo htmlspecialchars($text_logo);?></a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_retina_logo) !=0) : ?>
+                    <h1 class="show-retina-logo">
+                      <a class="retina-logo" href="<?php echo $this->baseurl; ?>/">
+                        <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($retina_logo);?>" style="border:0; margin:<?php echo htmlspecialchars($retina_logo_margin);?>; padding:<?php echo htmlspecialchars($retina_logo_padding);?>;" width="<?php echo htmlspecialchars($retina_logo_width);?>" alt="<?php echo htmlspecialchars($retina_logo_img_alt);?>" />
+                      </a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_slogan) !=0) : ?>
+                    <div class="slogan"><?php echo htmlspecialchars($slogan);?></div>
+                  <?php endif;?>
+                </div>
+
+                <div id="fav-navbar-btn" class="clearfix">
+    							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+                    <?php if (($show_mobile_menu_text) !=0) : ?>
+
+                      <span id="fav-mobilemenutext">
+                        <?php echo htmlspecialchars($mobile_menu_text);?>
+                      </span>
+
+                    <?php endif;?>
+
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    								<span class="icon-bar"></span>
+    							</a>
+                </div>
+
+  							<div class="nav-collapse collapse">
+  								<?php if ($this->countModules('nav')) { ?>
+  									<div id="fav-navbar-collapse" class="span12">
+  										<jdoc:include type="modules" name="nav" style="fav" />
+  									</div>
+  								<?php } ?>
+  							</div>
+
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  	  </div>
+
+  		<div id="fav-container">
+
+  			<!-- ADVERT -->
+  			<?php if ($this->countModules('advert')) { ?>
+
+  				<div class="container-fluid alert" id="fav-advertwrap">
+
+            <?php if (($show_advert_button) !=0) : ?>
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <?php endif; ?>
+
+  					<div class="row-fluid">
+  						<div id="fav-advert" class="span11">
+
+                <jdoc:include type="modules" name="advert" style="fav" />
+
+              </div>
+  					</div>
+    			</div>
+
+  			<?php } ?>
+
+        <!-- TOPBAR -->
+        <?php
+            $topbaractive = 0;
+          for ($i=1; $i<=$favcolumns ; $i++) { if ($this->countModules('topbar'.$i)) { $topbaractive++; } }
+        ?>
+
+        <?php if ($topbaractive > 0) : ?>
+          <?php $favclass = 'span'.(str_replace(".","-",12/$topbaractive)); ?>
+
+          <div class="container-fluid" id="fav-topbarwrap">
+            <div class="<?php echo $topbar_bg_image_overlay; ?>">
+              <div class="row-fluid">
+                <div id="fav-topbar" class="clearfix">
+
+                  <?php for ($j=1;$j<=$favcolumns;$j++) { ?>
+                    <?php if ($this->countModules('topbar'.$j)): ?>
+
+                        <div id="fav-topbar<?php echo $j; ?>" class="<?php echo $favclass; ?>">
+
+                          <jdoc:include type="modules" name="topbar<?php echo $j; ?>" style="fav" />
+
+                        </div>
+
+                    <?php endif; ?>
+                  <?php } ?>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <?php endif; ?>
+
+        <!-- HEADER -->
+        <div class="container-fluid" id="fav-headerwrap">
+          <div class="row-fluid">
+
+              <div id="fav-header" class="span12 clearfix">
+
+                <div id="fav-logo" class="span3">
+                  <?php if (($show_default_logo) !=0) : ?>
+                    <h1>
+                      <a class="default-logo" href="<?php echo $this->baseurl; ?>/">
+                        <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo/<?php echo htmlspecialchars($default_logo);?>" style="border:0;" alt="<?php echo htmlspecialchars($default_logo_img_alt);?>" />
+                      </a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_media_logo) !=0) : ?>
+                    <h1>
+                      <a class="media-logo" href="<?php echo $this->baseurl; ?>/">
+                        <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($media_logo);?>" style="border:0;" alt="<?php echo htmlspecialchars($media_logo_img_alt);?>" />
+                      </a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_text_logo) !=0) : ?>
+                    <h1>
+                      <a class="text-logo" href="<?php echo $this->baseurl; ?>/"><?php echo htmlspecialchars($text_logo);?></a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_retina_logo) !=0) : ?>
+                    <h1 class="show-retina-logo">
+                      <a class="retina-logo" href="<?php echo $this->baseurl; ?>/">
+                        <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($retina_logo);?>" style="border:0; margin:<?php echo htmlspecialchars($retina_logo_margin);?>; padding:<?php echo htmlspecialchars($retina_logo_padding);?>;" width="<?php echo htmlspecialchars($retina_logo_width);?>" alt="<?php echo htmlspecialchars($retina_logo_img_alt);?>" />
+                      </a>
+                    </h1>
+                  <?php endif;?>
+                  <?php if (($show_slogan) !=0) : ?>
+                    <div class="slogan"><?php echo htmlspecialchars($slogan);?></div>
+                  <?php endif;?>
+                </div>
+
+                  <?php if ($this->countModules('nav')) { ?>
+                      <div id="fav-nav" class="span9">
+                        <div class="favnav">
+                          <div class="navigation">
+                            <jdoc:include type="modules" name="nav" style="fav" />
+                          </div>
+                        </div>
+                      </div>
+                  <?php } ?>
+
+              </div>
+
+          </div>
+        </div>
+
         <!-- SLIDE -->
         <?php if ($this->countModules('slide')) { ?>
           <div class="container-fluid" id="fav-slidewrap">
