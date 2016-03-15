@@ -16,145 +16,59 @@
 
 ******************************************************************************************
 */
-@import url('http://fonts.googleapis.com/css?family=Oswald');
-html {
-    height: 100%;
-    font-size: 62.5%;
-}
-#cmcHeader, #cmcLogo, #cmcSlogan, #cmcNav, #cmcHeaderRight{
-  padding: 0;
-  margin: 0;
-  border: 0 none black;
-  box-sizing: border-box;
-}
-#cmcHeader{
-  border-top: 7px solid #0099ff;
-  height: 155px;
-  box-shadow: 2px 2px 20px #aaa;
-  background: linear-gradient(white, white, white, white, white, white, white, white, white, white, white, white, #eee);
-}
-#cmcLogo{
-  float: left;
-  margin: 12px;
-  margin-left: 30px;
-}
-#cmcLogo img{
-  height: 131px;
-}
-#cmcHeaderRight{
-  float: right;
-  margin-right: 20px;
-  height: 155px;
-}
-#cmcSlogan{
-  margin-right: 150px;
-  font-size: 1.5rem;
-  padding-top: 15px;
-  line-height: 45px;
-  height: 60px;
-  float: left;
-}
-#cmcNav, #cmcNav ul, #cmcNav ul li, #cmcNav ul li a{
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-#cmcNav{
-  margin-top: 15px;
-  clear: both;
-  margin-right: 50px;
-  float: right;
-  height: 55px;
-  border-radius: 7px 7px;
-  background: #08c;
-}
-#cmcNav ul{
-  
-  height: 100%;
-}
-#cmcNav ul li{
-  margin-right: 35px;
-  font-size: 1rem;
-}
-#cmcNav ul li:first-child{
-  margin-left: 35px;
-}
-#cmcNav ul li a{
-  color: white;
-  height: 55px ;
-  line-height: 55px;
-  font-family: Oswald, Helvetica, Arial, Verdana, sans-serif !important;
-}
-#cmcNav ul .active{
-  
-}
-#cmcNav ul .active a{
-  color: black;
-  border-bottom: 5px solid white;
-}
 
-
-#cmcSliderWrapWrap, #cmcSliderWrap, #cmcSlider, #cmcSliderSide{
-  padding: 0;
-  margin: 0;
-  border: none;
-  box-sizing: border-box;
-}
-#cmcSliderWrapWrap{
-  width: 100%;
-  background: #fafafa;
-  margin-top: 15px;
-  padding-top: 40px;
-  height: 540px;
-}
-#cmcSliderWrap{
-  
-  width: 85%;
-  margin: auto;
-  height: 500px;
-}
-#cmcSlider{
-  width: 80%;
-  float: left;
-  height: 100%;
-  margin-right: 20px;
-  padding: 5px;
-  border: 5px solid #eee;
-  box-shadow: 5px 5px 5px #bbb;
-}
-#cmcSliderSide{
-  float: left;
-  width: 10%;
-  height: 500px;
-}
 #fav-container{
-  box-shadow: 0px 0px;
-}
-#fav-footerwrap{
-  background: #333;
+    background-image:  linear-gradient(to right, rgba(255, 255, 255, 0) 90%, rgba(46,115,176, 0.1)),linear-gradient(to left, rgba(255, 255, 255, 0) 90%, rgba(46,115,176, 0.1));
 }
 
 
 
-
-
-
-
-
-
-
-
-
-.noPadding{
-  padding: 0px;
+#fav-container{
+    margin-top: 0;
+    margin-bottom: 0;
 }
+#fav-containerwrap{
+    background: none;
+}
+
 #fav-headerwrap{
-  background: #0077bb;
-  border: 0px;
+    border: none;
+    border-top: 7px solid #0099ff;
+    background: linear-gradient(white, white, white, white, white, white, white, white, white, white, white, white, #eee);
+    box-shadow: 2px 2px 20px #aaa;
+    margin-bottom: 20px;
+    /*background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Coronado_Bridge_Aerial_Panorama.jpg/1024px-Coronado_Bridge_Aerial_Panorama.jpg') 0px 0px /100vw 100%, linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));*/
+    /*,linear-gradient(white, white, white, white, white, white, white, white, white, white, white, white, #eee), rgba(0, 0, 0, 0.1);*/
+background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png), linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(46,115,176, 1)), linear-gradient(to bottom, white 90%, #eee);
+  background-repeat: no-repeat,no-repeat,  no-repeat;
+  background-position: left, right;
+
+
+}
+
+
+
+
+
+/*desktop*/
+@media (min-width: 1201px){
+#fav-header{
+    position: relative;
 }
 #fav-nav{
-    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
-#fav-container{
-  margin-top: 0;
+#fav-logo img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+}
+/*tablet*/
+@media (max-width: 1200px){
+#fav-logo img{
+    width: 250px;
+    margin-top: 20px;
+}
 }
