@@ -5,7 +5,7 @@ class JConfig {
 	public $display_offline_message = '1';
 	public $offline_image = 'images/CMC/offline/offlineLogo.jpg';
 	public $sitename = 'Coronado Men\'s Connection';
-	public $editor = 'codemirror';
+	public $editor = 'none';
 	public $captcha = '0';
 	public $list_limit = '20';
 	public $access = '1';
@@ -28,7 +28,7 @@ class JConfig {
 	public $ftp_pass = '';
 	public $ftp_root = '';
 	public $ftp_enable = '0';
-	public $offset = 'UTC';
+	public $offset = 'America/Los_Angeles';
 	public $mailonline = '1';
 	public $mailer = 'mail';
 	public $mailfrom = 'srhscompsciclub@gmail.com';
