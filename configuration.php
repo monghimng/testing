@@ -1,7 +1,7 @@
 <?php
 class JConfig {
-	public $offline = '1';
-	public $offline_message = 'Thank you for your interest in Coronado Men\'s Connection. The site will be up on February 15.';
+	public $offline = '0';
+	public $offline_message = 'Thank you for your interest in Coronado Men\'s Connection. The site is in maintenance. Please come back later.';
 	public $display_offline_message = '1';
 	public $offline_image = 'images/CMC/offline/offlineLogo.jpg';
 	public $sitename = 'Coronado Men\'s Connection';
@@ -89,4 +89,5 @@ class JConfig {
 	public $cookie_domain = '';
 	public $cookie_path = '';
 	public $asset_id = '1';
+	public $cache_platformprefix = '0';
 }
