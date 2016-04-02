@@ -73,16 +73,84 @@ background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png), lin
 }
 }
 
+#mobileNav{
+    display: none;
+}
+/*Using tablet menu for mobile as well*/
+@media (max-width: 768px) {
+    #mobileNav{
+        display: block;
+    }
+  #navbar-inner {
+    /*display: block;*/
+  }
+  #fav-logo {
+    display: block;
+  }
+  #fav-header #fav-logo .media-logo img {
+    max-height: none;
+  }
+  #fav-header #fav-logo{
+    float: none !important;
+    margin: auto !important;
+  }
+  #fav-logo img{
+    display: block;
+    margin: auto;
+  }
+  #fav-navbar-btn {
+    float: none;
+    padding-right: 0px;
+  }
+  #fav-navbar-btn a{
+    display: block;
+    
+  }
+  #fav-navbar-btn a.btn.btn-navbar:hover, #fav-navbar-btn a.btn.btn-navbar:focus{
+    background-color: #0099ff !important;
+  }
+  #fav-navbar-collapse .moduletable ul li{
+    border-radius: 4px 4px 4px 4px ;
+  }
+  #fav-navbar-collapse .moduletable ul li.active{
+    background: linear-gradient(to right, #08c, rgba(0,0,0,0));
+  }
+  #fav-navbar-collapse .moduletable ul li.active:hover{
+    background: #08c;
+  }
+  #fav-navbar-collapse .moduletable ul li:hover{
+    background: linear-gradient(to right, #08c, rgba(0,0,0,0));
+  }
+  ul.nav.menu > li > a:hover{
+    background-color: inherit;
+  }
+  #fav-header .navbar-inner{
+    padding-bottom: 5px;
+    background: none;
+    border: none;
+  }
+  #fav-headerwrap{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 
-
+/*slider*/
 #fav-slidewrap{
     padding-top: 50px;
     padding-bottom: 50px;
-    /*background: linear-gradient(to bottom, white, white 20%,#0099ff 20%, #0099ff);*/
-    box-shadow: 2px 2px 20px #aaa;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    background: linear-gradient(to bottom, white, white 80% ,#007acc 20%, #007acc);
+    border-bottom: 15px solid #cc5200;
+
+}
+.moduletablecmcSlider{
 }
 
 .verticalCenterItem{
    margin-top: 120px;
 }
+
+
 

@@ -1012,3 +1012,7 @@
 2016-03-22T16:38:07+00:00	INFO 165.24.10.129	joomlafailure	Empty password not allowed.
 2016-03-26T16:39:52+00:00	INFO 107.204.76.217	joomlafailure	Empty password not allowed.
 2016-03-31T23:55:08+00:00	INFO 107.204.76.217	joomlafailure	Username and password do not match or you do not have an account yet.
+2016-04-02T03:07:07+00:00	INFO 107.204.76.217	joomlafailure	Username and password do not match or you do not have an account yet.
+2016-04-02T03:07:09+00:00	INFO 107.204.76.217	joomlafailure	Username and password do not match or you do not have an account yet.
+2016-04-02T04:42:22+00:00	INFO 107.204.76.217	joomlafailure	Username and password do not match or you do not have an account yet.
+2016-04-02T04:42:26+00:00	INFO 107.204.76.217	joomlafailure	Username and password do not match or you do not have an account yet.
