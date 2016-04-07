@@ -16,6 +16,37 @@
 
 ******************************************************************************************
 */
+/*typography change*/
+h1{
+    color: #4C4C4C;
+    font-size: 40px;
+    line-height: 45px;
+    position: relative;
+}
+.sexy_line {
+    height: 2px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+h2{
+    color: #0071BC;
+}
+h4{
+    color: #707070;
+}
+/*inside article style*/
+.h2list{
+    margin: auto;
+    width: 90%;
+    padding-bottom: 45px;
+}
+.h2list ul li{
+    line-height: 1.8em;
+    font-size: 17.5px;
+    padding-bottom: 15px;
+}
+
+
 
 #fav-container{
     background-image:  linear-gradient(to right, rgba(255, 255, 255, 0) 90%, rgba(46,115,176, 0.1)),linear-gradient(to left, rgba(255, 255, 255, 0) 90%, rgba(46,115,176, 0.1));
@@ -64,20 +95,44 @@ background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png), lin
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/*make navigation menu font larger*/
+#fav-nav ul a{
+    font-size: 17px;
 }
+}
+
+
+
+
+
+
+
 /*tablet*/
 @media (max-width: 1200px){
 #fav-logo img{
     width: 250px;
     margin-top: 20px;
 }
+#fav-nav ul a{
+    font-size: 14px;
+}
 }
 
 #mobileNav{
     display: none;
 }
+
+
+
+
+
+
+
+
+
 /*Using tablet menu for mobile as well*/
 @media (max-width: 768px) {
+    
     #mobileNav{
         display: block;
     }
@@ -125,7 +180,8 @@ background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png), lin
     background-color: inherit;
   }
   #fav-header .navbar-inner{
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     background: none;
     border: none;
   }
@@ -134,6 +190,9 @@ background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png), lin
     padding-bottom: 10px;
   }
 }
+
+
+
 
 /*slider*/
 #fav-slidewrap{
@@ -145,12 +204,15 @@ background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png), lin
     border-bottom: 15px solid #cc5200;
 
 }
-.moduletablecmcSlider{
-}
+
+
 
 .verticalCenterItem{
    margin-top: 120px;
 }
+
+
+
 
 
 
