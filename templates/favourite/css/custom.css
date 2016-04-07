@@ -29,7 +29,7 @@ h1{
     background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }
 h2{
-    color: #0071BC;
+    color: #0063A0;
 }
 h4{
     color: #707070;
@@ -200,8 +200,8 @@ background-image: url(https://mdn.mozillademos.org/files/11307/bubbles.png), lin
     padding-bottom: 50px;
     padding-left: 0px !important;
     padding-right: 0px !important;
-    background: linear-gradient(to bottom, white, white 80% ,#007acc 20%, #007acc);
-    border-bottom: 15px solid #cc5200;
+    background: linear-gradient(to bottom, white, white 80% ,#005D9B 20%, #005D9B);
+    border-bottom: 15px solid #9B4104;
 
 }
 
